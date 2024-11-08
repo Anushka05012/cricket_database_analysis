@@ -1,0 +1,412 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header-container {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    margin-bottom: 20px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+    margin: 0;
+}
+
+.nav-bar ul li {
+    padding: 15px 20px;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar ul li a:hover {
+    color: #f0e68c;
+}
+
+/* Content Container Styles */
+.content-container {
+    padding: 20px;
+}
+
+/* Common Section Styles for Lists */
+.list-section {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.list-section h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.list-item {
+    background: #e9ecef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.list-item a:hover {
+    text-decoration: underline;
+}
+
+/* Details Section Styles */
+.details-section {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.details-section h2 {
+    color: #007bff;
+}
+
+.details-section p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Specific Styles for Players, Teams, Matches, etc. */
+.players-list, .teams-list, .matches-list, .venues-list, .boards-list, .tournaments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.players-list .player-info,
+.teams-list .team-info,
+.matches-list .match-info,
+.venues-list .venue-info,
+.boards-list .board-info,
+.tournaments-list .tournament-info {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.details-section img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+.footer-container {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.footer-container .social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.footer-container .social-icons li {
+    margin: 0 10px;
+}
+
+.footer-container .social-icons li a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.footer-container .social-icons li a:hover {
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-bar ul li {
+        padding: 10px;
+    }
+}
+
+/* Specific Styles for Matches Section */
+.matches-list {
+    list-style: none; /* No bullets */
+    padding: 0; /* Remove padding */
+}
+
+.matches-list .match-info {
+    background: #e9ecef; /* Light background for individual match items */
+    padding: 15px; /* Space inside each item */
+    margin-bottom: 15px; /* Space between items */
+    border-radius: 6px; /* Rounded corners */
+}
+
+.matches-list .match-info a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    font-weight: bold; /* Bold links */
+}
+
+.matches-list .match-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Additional Details Section for Matches */
+.details-section {
+    background: #e9ecef; /* Light background for details */
+    padding: 20px; /* Space inside */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space above */
+}
+
+.details-section h2 {
+    color: #007bff; /* Primary color for details heading */
+}
+
+.details-section p {
+    font-size: 1.1em; /* Slightly larger text for details */
+    color: #555; /* Darker gray for text */
+}
+
+/* Common Section Styles for Lists */
+.list-section {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Specific Styles for Teams */
+.teams-list {
+    list-style: none;
+    padding: 0;
+}
+
+.team-info {
+    background: #e9ecef; /* Matching background with player and tournament sections */
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 6px; 
+}
+
+/* Ensure links within team-info are styled similarly */
+.team-info h3 {
+    margin: 0; 
+    font-size: 1.5em; 
+    color: #007bff; /* Primary color */
+}
+
+.team-info a {
+    text-decoration: none; 
+    color: #007bff; 
+    font-weight: bold; 
+}
+
+.team-info a:hover {
+    text-decoration: underline; 
+}
+
+/* Adjustments for the details section of teams */
+.details-section h2 {
+    color: #007bff;
+}
+
+.details-section p {
+    font-size: 1.1em; 
+    color: #555; 
+}
+
+/* Footer Styles (Unchanged) */
+.footer-container {
+    background-color: #343a40; 
+    color: #fff; 
+    text-align: center; 
+    padding: 15px; 
+    margin-top: 20px; 
+}
+
+.footer-container p {
+    margin: 0; 
+}
+
+
+/* Specific Styles for Venues */
+.venues-list {
+    list-style: none;
+    padding: 0;
+}
+
+.venue-info {
+    background: #e9ecef; /* Matching background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.venue-info h3 {
+    margin: 0;
+    font-size: 1.5em; /* Font size matching other sections */
+    color: #007bff; /* Primary color */
+}
+
+.venue-info a {
+    text-decoration: none;
+    color: #007bff; /* Primary color */
+    font-weight: bold;
+}
+
+.venue-info a:hover {
+    text-decoration: underline;
+}
+
+/* Adjustments for the details section of venues */
+.details-section h2 {
+    color: #007bff; /* Primary color */
+}
+
+.details-section p {
+    font-size: 1.1em;
+    color: #555; /* Slightly darker for contrast */
+}
+/* Specific Styles for Players */
+.players-list {
+    list-style: none;
+    padding: 0;
+}
+
+.player-info {
+    background: #e9ecef; /* Matching background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.player-info a {
+    text-decoration: none;
+    color: #007bff; /* Primary color */
+    font-weight: bold;
+}
+
+.player-info a:hover {
+    text-decoration: underline;
+}
+
+/* Adjustments for the details section of players */
+.details-section {
+    background: #e9ecef; /* Light background for details */
+    padding: 20px; /* Space inside */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space above */
+}
+
+.details-section h2 {
+    color: #007bff; /* Primary color */
+}
+
+.details-section p {
+    font-size: 1.1em; /* Slightly larger text for details */
+    color: #555; /* Darker gray for text */
+}
+/* Search Form Styles */
+.search-form {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"],
+.search-form select,
+.search-form input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-form .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for Search Results Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
